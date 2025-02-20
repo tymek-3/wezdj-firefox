@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "wezdj",
+  "version": "1.0",
+
+  "description": "bierze zdj",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.aliexpress.com/*"]
+    }
+  ],
+
+ "browser_action": {
+	"default_popup": "index.html"
+  }
+}
+
