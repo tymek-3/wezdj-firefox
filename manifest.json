@@ -4,11 +4,14 @@
   "version": "1.0",
 
   "description": "bierze zdj",
-  "permissions": ["activeTab", "tabs"],
+  "permissions": ["activeTab", "tabs", "downloads"],
 
-  "background": {
-      "scripts": ["main.js"]
-  },
+  "content_scripts": [
+      {
+          "matches": ["*://*.aliexpress.com/*"],
+          "js": ["main.js"]
+      }
+  ],
 
   "browser_action": {
 	  "default_popup": "index.html"
